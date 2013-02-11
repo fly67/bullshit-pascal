@@ -1,0 +1,41 @@
+object Form1: TForm1
+  Left = 481
+  Height = 632
+  Top = 68
+  Width = 852
+  Caption = 'Form1'
+  ClientHeight = 632
+  ClientWidth = 852
+  OnCreate = FormCreate
+  LCLVersion = '1.0.4.0'
+  object Label1: TLabel
+    Left = 184
+    Height = 215
+    Top = 64
+    Width = 435
+    Caption = '00:00'
+    Font.CharSet = SHIFTJIS_CHARSET
+    Font.Height = -170
+    Font.Name = '@Adobe Gothic Std B'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 312
+    Height = 94
+    Top = 360
+    Width = 208
+    Caption = 'Start'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    left = 40
+    top = 32
+  end
+end
